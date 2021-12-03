@@ -12,18 +12,18 @@
   </head>
   <body>
     <form action="">
-      <h2>Entrar na Lista</h2>
-      <div class="input">
-        <input type="text"required/>
-        <label>Nome</label>
-        <span class="error"></span>
-      </div>
-
+      <h2>Validar seus dados</h2>
       <div class="input">
         <input type="email" required />
         <label>E-mail</label>
         <span class="error"></span>
       </div>
+      <div class="input">
+        <input id="cpf" type="text" onblur="getVal()" required />
+        <label>CPF</label>
+        <span class="error"></span>
+      </div>
+
 
       <button type="submit">Enviar</button>
 
